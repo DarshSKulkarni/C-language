@@ -2,9 +2,11 @@
 
 int main()
 {
-    int side_length;
-    printf("enter your side_length \n");
-    scanf("%d", &side_length);
-    printf("area is : %d", side_length * side_length);
+
+    float radius;
+    printf("enter your radius \n");
+    scanf("%f", &radius);
+    printf("area is : %f", (22.0 / 7) * radius * radius);
 
     return 0;
+}
