@@ -2,13 +2,17 @@
 // Write and run C online using this editor.
 
 #include <stdio.h>
-#include <math.h>
 
-int main()
-{
-    int x;
-    printf("enter your number");
-        scanf("%d", & x);
-printf("%d", (x>9)&&(x<100));
-        return 0;
-    }
+int main() {
+int a; int b; int c;
+    printf("Please enter your first number.");
+    scanf("%d", & a);
+        printf("please enter your second number.");
+        scanf("%d", & b);
+        printf("please enter your third nummber.");
+            scanf("%d", & c);
+
+        printf("The average of numebers is %d", (a+b+c)/3);
+        
+    return 0;
+}
