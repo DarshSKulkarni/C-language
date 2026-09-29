@@ -5,7 +5,9 @@
 
 int main()
 {
-    int a = 4;
-    printf("%d \n", 4 != 3 && 3 > 4);
-    return 0;
+    int a =1;
+    int b=4;
+    a+=b ;
+    printf("%d \n", a);
+    return 0; 
 }
