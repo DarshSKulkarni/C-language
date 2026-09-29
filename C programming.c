@@ -5,9 +5,10 @@
 
 int main()
 {
-    int a =1;
-    int b=4;
-    a+=b ;
-    printf("%d \n", a);
-    return 0; 
+    int x;
+    printf("enter your number:");
+    scanf("%d", &x);
+    printf("%d", x % 3 == 0);
+
+    return 0;
 }
