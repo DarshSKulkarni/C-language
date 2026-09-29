@@ -1,12 +1,11 @@
+// Online C compiler (editor)
+// Write and run C online using this editor.
+
 #include <stdio.h>
 
 int main()
 {
-
-    float radius;
-    printf("enter your radius \n");
-    scanf("%f", &radius);
-    printf("area is : %f", (22.0 / 7) * radius * radius);
-
+    int a = 4;
+    printf("%d \n", 4 != 3 && 3 > 4);
     return 0;
 }
