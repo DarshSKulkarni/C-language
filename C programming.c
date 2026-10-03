@@ -3,16 +3,20 @@
 
 #include <stdio.h>
 
-int main()
-{
-
-    int a;
-    int b;
-    printf("please enter your first number");
-    scanf("%d", &a);
-    printf("please enter your second number");
-    scanf("%d", &b);
-    int max = (a > b) * a + (!(a > b)) * b;
-    printf("the greater integer is: %d \n", max);
+int main() {
+int age1;
+    //her age
+    int age2;
+    //his age
+    printf("enter her age:\n");
+    scanf("%d",& age1);
+        
+        printf("enter his age:\n");
+        scanf("%d", & age2);
+  
+    if(age1>age2){printf ("Her age is greater than his");
+                 }
+        else{printf("His age is greater than her");
+            }
     return 0;
 }
