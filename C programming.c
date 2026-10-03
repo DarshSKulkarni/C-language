@@ -4,19 +4,20 @@
 #include <stdio.h>
 
 int main() {
-int age1;
-    //her age
-    int age2;
-    //his age
-    printf("enter her age:\n");
-    scanf("%d",& age1);
-        
-        printf("enter his age:\n");
-        scanf("%d", & age2);
-  
-    if(age1>age2){printf ("Her age is greater than his");
-                 }
-        else{printf("His age is greater than her");
-            }
-    return 0;
+
+int a;
+    printf("enter your marks out of 100 \n");
+    scanf("%d", & a);
+    if 
+        (a<=30) {
+    printf("Sorry to inform you, but you have FAILED! \n");
+    
+    }
+
+    else 
+         {
+            printf("You have passed the test!");
+                
+        }
+        return 0;
 }
