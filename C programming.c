@@ -4,14 +4,15 @@
 #include <stdio.h>
 
 int main() {
-for( int i=5;i<=50;i++)
+    int fact=1; int n;
+    printf("please enter your number");
+    scanf("%d", & n);
+for( int i=1;i<=n;i++)
     
-    { if (i%2==0)
-    { continue;
+    
+    { fact=fact*i; }
+      printf("%d \n", fact);
         
-    }
-      printf("%d \n", i);
-        }
     
     return 0;
 }
