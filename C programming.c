@@ -4,15 +4,14 @@
 #include <stdio.h>
 
 int main() {
-int i;
-    do{ printf("please enter your number \n");
-        scanf("%d", & i);
-        printf("%d \n", i);
-
-            if (i%7==0) {
-                break;
-            }
+for( int i=1;i<=10;i++)
+    
+    { if (i==6)
+    { continue;
+        
     }
-        while(1);
+      printf("%d \n", i);
+        }
+    
     return 0;
 }
