@@ -3,16 +3,11 @@
 
 #include <stdio.h>
 
-int main() {
-    int fact=1; int n;
-    printf("please enter your number");
-    scanf("%d", & n);
-for( int i=1;i<=n;i++)
-    
-    
-    { fact=fact*i; }
-      printf("%d \n", fact);
-        
-    
+void printHello();
+
+int main()
+{
+    printHello(); // funcation call
     return 0;
 }
+void printHello() { printf("hello"); }
