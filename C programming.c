@@ -1,19 +1,17 @@
 #include<stdio.h>
-void printNamaste();
-void printBonjour();
+int sum(int a, int b);
 
-int main() {
-int i;
-printf("If indian type 1, if french type 2 \n");
-    scanf("%d", & i);
+int main () {
+    int a, b;
+    printf("please enter your first number");
+    scanf("%d", & a);
+    printf("please enter your second number");
+    scanf("%d", & b);
+int sum(int a, int b);
+        int s = sum(a,b);
+printf("sum is %d", s);
+return 0; }
 
-    if (i==1) {printNamaste();}
-    else if(i==2) {printBonjour();}
- return 0; }
-
-void printNamaste()
-{  printf("Namaste \n");
-    
-    }
-void printBonjour()
-{ printf ("bonjour \n"); }
+int sum(int x, int y) {
+    return y+x;
+}
