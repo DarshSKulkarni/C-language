@@ -1,13 +1,19 @@
-// Online C compiler (editor)
-// Write and run C online using this editor.
+#include<stdio.h>
+void printNamaste();
+void printBonjour();
 
-#include <stdio.h>
+int main() {
+int i;
+printf("If indian type 1, if french type 2 \n");
+    scanf("%d", & i);
 
-void printHello();
+    if (i==1) {printNamaste();}
+    else if(i==2) {printBonjour();}
+ return 0; }
 
-int main()
-{
-    printHello(); // funcation call
-    return 0;
-}
-void printHello() { printf("hello"); }
+void printNamaste()
+{  printf("Namaste \n");
+    
+    }
+void printBonjour()
+{ printf ("bonjour \n"); }
