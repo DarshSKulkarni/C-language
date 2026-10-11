@@ -1,17 +1,21 @@
-#include<stdio.h>
-int sum(int a, int b);
+// Online C compiler (editor)
+// Write and run C online using this editor.
 
-int main () {
-    int a, b;
-    printf("please enter your first number");
-    scanf("%d", & a);
-    printf("please enter your second number");
-    scanf("%d", & b);
-int sum(int a, int b);
-        int s = sum(a,b);
-printf("sum is %d", s);
-return 0; }
+#include <stdio.h>
+void printTable();
 
-int sum(int x, int y) {
-    return y+x;
+
+int main() { 
+    int n;
+    printf("please enter your number");
+    scanf("%d", & n);
+    printTable(n);   //argument/actual parameter- calling 
+    return 0;
 }
+
+int i;
+void printTable(int n){ //formal parameter
+    for (i=1; i<=10; i++)
+        
+{
+    printf("%d \n", i*n); } }
