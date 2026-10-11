@@ -1,21 +1,16 @@
-// Online C compiler (editor)
-// Write and run C online using this editor.
+#include<stdio.h>
+void CalculatePrice(float value);
 
-#include <stdio.h>
-void printTable();
-
-
-int main() { 
-    int n;
-    printf("please enter your number");
-    scanf("%d", & n);
-    printTable(n);   //argument/actual parameter- calling 
+int main() {
+    float value;
+printf("please enter your amount \n");
+        scanf("%f",& value);
+        CalculatePrice(value);
+    printf("value is: %f \n", value);
     return 0;
+    
 }
 
-int i;
-void printTable(int n){ //formal parameter
-    for (i=1; i<=10; i++)
-        
-{
-    printf("%d \n", i*n); } }
+void CalculatePrice(float value) {
+value= value+ (0.18*value);
+printf("final price is %f \n", value); }
