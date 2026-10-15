@@ -2,19 +2,23 @@
 // Write and run C online using this editor.
 
 #include <stdio.h>
-void areaSquare( int n);
+void areaRectangle( int a, int b);
 
 
 int main() {
-     int n;
-     printf("please enter your side length in cm \n");
-     scanf("%d", & n);
-    areaSquare(n);
+      int a; int b;
+     printf("please enter your 1st side length in cm \n");
+     scanf("%d", & a);
+         printf("please enter your 2st side (breadth) in cm \n");
+     scanf("%d", & b);
+    
+    areaRectangle(a, b);
     
 
     return 0;
 }
 
-void areaSquare(int n) {
-    n=n*n;
+void areaRectangle(int a, int b) {
+int n;
+    n=a*b;
     printf("Area is %d cm", n); }
