@@ -1,25 +1,17 @@
-// Online C compiler (editor)
-// Write and run C online using this editor.
+#include<stdio.h>
+float convert(float m);
 
-#include <stdio.h>
-int fact( int n);
-
-
-int main() {
-    int n;
-    printf("please enter your number");
-    scanf("%d", & n);
-printf("factorial is : %d", fact(n));
-
-    return 0;
+int main () { 
+    float m,n;
+    printf("please enter your temperature in C");
+    scanf("%f", & m);
+    printf("your temperature in farheneit is %f", convert(m)) ;
+    
+    
+return 0;
 }
 
-//recursion
-int fact(int n) {
-if (n==1){
-    return 1;
-}
-
-int prodNm1 = fact(n-1);
-int prodN = (prodNm1 * n);
+    float convert( float m) { float n;
+    n = ((m*(0.18))+32); 
+    return n;
 }
