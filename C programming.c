@@ -2,21 +2,24 @@
 // Write and run C online using this editor.
 
 #include <stdio.h>
-int sum( int n);
+int fact( int n);
 
 
 int main() {
-printf("sum is : %d", sum(5));
+    int n;
+    printf("please enter your number");
+    scanf("%d", & n);
+printf("factorial is : %d", fact(n));
 
     return 0;
 }
 
 //recursion
-int sum(int n) {
+int fact(int n) {
 if (n==1){
     return 1;
 }
 
-int sumNm1 = sum(n-1);
-int sumN = sumNm1 + n;
+int prodNm1 = fact(n-1);
+int prodN = (prodNm1 * n);
 }
