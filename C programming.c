@@ -1,15 +1,22 @@
-#include<stdio.h>
-void PrintHW(int count);
+// Online C compiler (editor)
+// Write and run C online using this editor.
 
-int main(){
-    PrintHW(5);
+#include <stdio.h>
+int sum( int n);
+
+
+int main() {
+printf("sum is : %d", sum(5));
+
     return 0;
 }
 
-void PrintHW (int count) {
-    if (count ==0) {
-    return;
-    }
-    printf("hello world \n");
-    PrintHW(count-1);
+//recursion
+int sum(int n) {
+if (n==1){
+    return 1;
+}
+
+int sumNm1 = sum(n-1);
+int sumN = sumNm1 + n;
 }
