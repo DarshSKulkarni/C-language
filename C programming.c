@@ -5,9 +5,10 @@
 
 int main() {
 
- int age =22;
+int age = 22;
 int *ptr = &age;
-int _age1= *ptr;
-    printf("%d", _age1);
+printf("%u", &age);
+printf("%u \n", ptr);
+printf("%u \n", &ptr);
     return 0;
 }
