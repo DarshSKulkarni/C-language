@@ -4,9 +4,12 @@
 #include <stdio.h>
 
 int main() {
-int age = 22;
-int *ptr = &age;
-printf("%d \n", *ptr);
-printf("%d\n", *(&age));
+int i = 5;
+int *ptr = &i; 
+int **pptr = &ptr;
+printf("%d", **pptr);
+    
+
+    
     return 0;
 }
