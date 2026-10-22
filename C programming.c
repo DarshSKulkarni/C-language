@@ -4,8 +4,8 @@
 #include <stdio.h>
 
 int main() {
-float age = 22.00;
-float *ptr = &age;
+char age = '*';
+char *ptr = &age;
     printf("%u \n", ptr);
 ptr++;
 
