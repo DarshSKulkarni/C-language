@@ -4,14 +4,12 @@
 #include <stdio.h>
 
 int main() {
-char age = '*';
-char *ptr = &age;
-    printf("%u \n", ptr);
-ptr++;
-
-    printf("%u \n", ptr);
-    ptr--;
-    printf("%u \n", ptr);
-
+int age= 22;
+int _age = 23;
+int *ptr = &age;
+int  *_ptr = &_age;
+printf("differnece = %u \n", ptr-_ptr);
+     _ptr = &age;
+printf("comparison = %u \n", ptr ==_ptr);
     return 0;
-}
+    } 
