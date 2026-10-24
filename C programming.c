@@ -2,22 +2,18 @@
 // Write and run C online using this editor.
 
 #include <stdio.h>
+void printNo(int arr[], int n);
 
 int main() {
-int aadhar[5];
-
-//input
-    int *ptr= &aadhar[0]; 
-    for (int i=0; i<5; i++)
-    { printf("%d : index" , i);
-      scanf("%d", &aadhar[i]);
-            
-    }
-
-    for (int i=0; i<5; i++)
-    {
-        printf("%d index = %d \n", i, aadhar[i]);
-    }
- 
+int arr[] = {1, 2, 3, 4, 5, 6};
+printNo(arr, 6);
     return 0;
 }
+
+void printNo( int arr[], int n) {
+    for (int i=0; i<n; i++) {
+        printf("%d \t", arr[i]); 
+    }
+    
+}
+    
