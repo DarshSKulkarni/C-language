@@ -4,12 +4,20 @@
 #include <stdio.h>
 
 int main() {
-int age= 22;
-int _age = 23;
-int *ptr = &age;
-int  *_ptr = &_age;
-printf("differnece = %u \n", ptr-_ptr);
-     _ptr = &age;
-printf("comparison = %u \n", ptr ==_ptr);
+int aadhar[5];
+
+//input
+    int *ptr= &aadhar[0]; 
+    for (int i=0; i<5; i++)
+    { printf("%d : index" , i);
+      scanf("%d", (ptr+i));
+            
+    }
+
+    for (int i=0; i<5; i++)
+    {
+        printf("%d index = %d \n", i, * (ptr+i));
+    }
+ 
     return 0;
-    } 
+}
