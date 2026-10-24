@@ -2,18 +2,23 @@
 // Write and run C online using this editor.
 
 #include <stdio.h>
-void printNo(int *arr, int n);
+int countodd(int arr[], int n);
 
-int main() {
-int arr[] = {1, 2, 3, 4, 5, 6};
-printNo(arr, 6);
-    return 0;
+int main(){
+    int arr[]= {5, 6, 7, 8, 9, 10};
+    countodd(arr, 6);
+printf ("number of odd numbers are: %d", countodd(arr, 6));
+return 0;
 }
 
-void printNo( int *arr, int n) {
-    for (int i=0; i<n; i++) {
-        printf("%d \t", arr[i]); 
+int countodd(int arr[], int n) {
+    int count=0;
+    for( int i=0; i<n; i++) {
+    if (arr[i] % 2 != 0) {
+        count ++;
     }
+    }
+
+return count;
     
 }
-    
