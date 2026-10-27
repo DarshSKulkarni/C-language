@@ -7,9 +7,9 @@ void printstring(char arr[]);
 int countLength(char arr[]);
 
 int main() {
-    char oldStr[] = "oldStr";
-    char newStr[] = "newStr";
-    strcpy(newStr, oldStr);
+    char oldStr[100] = "firstStr";
+    char newStr[] = "secondStr";
+    strcat(newStr, oldStr);
     puts(newStr);
 
     //  char firstname[50];
