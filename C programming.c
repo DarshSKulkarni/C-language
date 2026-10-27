@@ -6,10 +6,15 @@ void printstring(char arr[]);
 
 int main() {
 
- char name[50];
- scanf("%s", name);
- printf("your name is %s", name);
+//  char firstname[50];
+//  scanf("%s", firstname);
+//  printf("your name is %s", firstname);
     
+char fullname[100];
+ fgets(str, 100, stdin);
+ puts(str);
+    
+
     return 0;
 }
 void printstring( char arr[]) {
