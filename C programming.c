@@ -8,7 +8,9 @@ int countLength(char arr[]);
 
 int main() {
     char name[] = "shraddha";
-    printf("length is : %d", strlen(name));
+    int length= strlen(name);
+    
+    printf("length is : %d", length);
     
 
 //  char firstname[50];
