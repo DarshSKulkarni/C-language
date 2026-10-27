@@ -10,10 +10,14 @@ int main() {
 //  scanf("%s", firstname);
 //  printf("your name is %s", firstname);
     
-char fullname[100];
- fgets(str, 100, stdin);
- puts(str);
+// char fullname[100];
+//  fgets(str, 100, stdin);
+//  puts(str);
     
+char *canchange = "Helloworld";/
+puts(canchange);
+canchange = "hello";
+puts(chanchange);
 
     return 0;
 }
