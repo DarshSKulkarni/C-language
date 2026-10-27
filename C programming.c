@@ -7,13 +7,12 @@ void printstring(char arr[]);
 int countLength(char arr[]);
 
 int main() {
-    char name[] = "shraddha";
-    int length= strlen(name);
-    
-    printf("length is : %d", length);
-    
+    char oldStr[] = "oldStr";
+    char newStr[] = "newStr";
+    strcpy(newStr, oldStr);
+    puts(newStr);
 
-//  char firstname[50];
+    //  char firstname[50];
 //  scanf("%s", firstname);
 //  printf("your name is %s", firstname);
     
