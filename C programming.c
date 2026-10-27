@@ -7,11 +7,9 @@ void printstring(char arr[]);
 int countLength(char arr[]);
 
 int main() {
-    char oldStr[100] = "firstStr";
-    char newStr[] = "secondStr";
-    strcat(newStr, oldStr);
-    puts(newStr);
-
+    char oldStr[100] = "apple";
+    char newStr[] = "banana";
+   printf("%d", strcmp(newStr, oldStr));
     //  char firstname[50];
 //  scanf("%s", firstname);
 //  printf("your name is %s", firstname);
