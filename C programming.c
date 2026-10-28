@@ -1,40 +1,29 @@
-// Online C compiler (editor)
-// Write and run C online using this editor.
-
 #include <stdio.h>
-#include<string.h>
-void printstring(char arr[]);
-int countLength(char arr[]);
 
-int main() {
-    char oldStr[100] = "HAA";
-    char newStr[] = "HAA";
-   printf("%d", strcmp(newStr, oldStr));
-    //  char firstname[50];
-//  scanf("%s", firstname);
-//  printf("your name is %s", firstname);
+int main() 
+{  
+    int a[10], i, j, temp;
     
-// char fullname[100];
-//  fgets(str, 100, stdin);
-//  puts(str);
+    printf("Enter 10 numbers:\n");
+    for (i = 0; i < 10; i++) {
+        scanf("%d", &a[i]); 
+    }
 
-    return 0;
-}
+    // Corrected Logic
+    for (i = 1; i < 10; i++) {               // i acts as the step/gap size
+        for (j = 0; j < 10 - i; j++) {       // Bound check ensures j+i is always < 10
+            if (a[j] > a[j + i]) {
+                temp = a[j];
+                a[j] = a[j + i];             // Swapping j and j+i correctly
+                a[j + i] = temp;
+            }
+        }
+    }
 
-int countLength(char arr[]) {
-     int count = 0;
-     for (int i=0; arr[i]!='\0'; i++) {
-        count ++;
-     }
+    printf("Sorted array:\n");
+    for (i = 0; i < 10; i++) {               // Semicolon removed from here
+        printf("%d ", a[i]); 
+    }
 
-return count-1;
-
-}
-
-void printstring( char arr[]) {
-   for( int i=0; arr[i] != '\0' ; i++) {
-
-       printf("%c", arr[i]);
-   }
- printf("\n");   
+    return 0; 
 }
