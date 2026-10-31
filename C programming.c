@@ -1,29 +1,26 @@
+// Online C compiler (editor)
+// Write and run C online using this editor.
+
 #include <stdio.h>
+#include <string.h>
 
-int main() 
-{  
-    int a[10], i, j, temp;
-    
-    printf("Enter 10 numbers:\n");
-    for (i = 0; i < 10; i++) {
-        scanf("%d", &a[i]); 
-    }
 
-    // Corrected Logic
-    for (i = 1; i < 10; i++) {               // i acts as the step/gap size
-        for (j = 0; j < 10 - i; j++) {       // Bound check ensures j+i is always < 10
-            if (a[j] > a[j + i]) {
-                temp = a[j];
-                a[j] = a[j + i];             // Swapping j and j+i correctly
-                a[j + i] = temp;
-            }
-        }
-    }
+   struct student {
+        int roll;
+        float cgpa;
+        char name [50];
 
-    printf("Sorted array:\n");
-    for (i = 0; i < 10; i++) {               // Semicolon removed from here
-        printf("%d ", a[i]); 
-    }
+       
+   };
 
-    return 0; 
+int main() {
+    struct student s1;
+    s1.roll = 1664;
+    s1.cgpa = 9.2;
+   // s1.name = "darsh"
+    strcpy(s1.name, "darsh");
+        printf("student name: %s \n", s1.name);
+        printf("student cgpa: %f \n", s1.cgpa);
+        printf("student cgpa: %d \n", s1.roll);
+    return 0;
 }
