@@ -8,11 +8,7 @@
    struct student {
         int roll_no;
         float cgpa;
-        char name [50];
-
-
-
-       
+        char name [50];  
    };
 
 int main() {
@@ -23,10 +19,5 @@ ece [0].cgpa = 10.0;
     printf("name = %s \n", ece[0].name);
     printf("name = %d \n", ece[0].roll_no);
     printf("name = %f \n", ece[0].cgpa);
-
-
-
     return 0;
-
-
 }
